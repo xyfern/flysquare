@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/adaptive.css" %}" />
+    <style>
+        .top{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            top: 300px;
+            text-transform: uppercase;
+		    font-weight: bold;
+            font: small-caps bold 24px/1 sans-serif;
+		    font-size: 30px;
+            color: gray;
+            line-height: 1.3;
+        }
+    </style>
+    <title>Топ</title>
+</head>
+<body>
+    <div class="links"><a href="/">Главная</a> | <a href="/top">Рейтинг</a></div>
+    <div class="top">
+        <div style="color: aqua;">Топ Лучших Игроков</div>
+        <div>0. Лили</div>
+        <div>1. Надя</div>
+        <div>2. Миша</div>
+        <div>3. Степа</div>
+        <div>4. Матвей</div>
+        <div>5. Глеб</div>
+        <div>6. Володя</div>
+        <div>6.5. Аленка</div>
+        <div>7. Костя</div>
+
+    </div>
+    <div class="log" ><a href="">Зарегистрироваться</a> <br> <a href="">Войти</a>
+</body>
+</html>

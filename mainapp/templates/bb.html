@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/adaptive.css" %}" />
+    <style>
+        .image {
+            position: relative;
+            height: 800px;
+            width: 100%;
+            background: url(" {% static "images/4.png" %} ") no-repeat;
+            background-position: top center;   
+            background-size:cover;
+            filter:brightness(30%);
+        }
+        .image-text{
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-weight: bold;
+            font: small-caps bold 24px/1 sans-serif;
+           
+        }
+        .h1{
+            color: white;
+            font-size: 50px;
+            line-height: 1.5;
+        }
+        .text{
+            margin: 25px;
+            color: gray;
+            font: small-caps bold 24px/1 sans-serif;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        .but{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+        }
+ 
+
+    
+    </style> 
+    <title>Площадка Бабочка</title>
+</head>
+<body>
+    <div class="container">
+        <img class="image">
+        <div class="image-text"> <h2 class="h1">Игра: Закинь Мяч<br>20 ОЧКОВ</h2> </div>
+        <div class="links"><a href="/">Главная</a> | <a href="/top">Рейтинг</a></div>
+        <div class="log" ><a href="">Зарегистрироваться</a> <br> <a href="">Войти</a></div>
+    </div>
+    <div class="text">
+        <p>     
+        Правила игры: 
+    Стоя в квадрате, закинуть мяч 5 раз в корзину. 
+    <br>
+    Количество игроков: 1
+    <br>
+    Длительность игры: 3 минуты
+            <br>
+    Как начать играть: нажмите кнопку Старт 
+        </p>
+        <button type="button" class="but" style="margin: 0;">СТАРТ</button>
+        </div>
+
+</body>
+</html>
